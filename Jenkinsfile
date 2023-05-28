@@ -8,12 +8,7 @@ pipeline {
             }
         }
         
-        stage('Setup Environment') {
-            steps {
-                // Install Python dependencies, if needed
-                sh 'pip install -r requirements.txt'
-            }
-        }
+        
         
         stage('Run Voice Assistant') {
             steps {
